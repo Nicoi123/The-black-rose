@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The black rose</title>
+<!-- Подключение шрифтов -->
+<link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+ 
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: url('fon.jpg') no-repeat center center;
+    background-size: cover; /* масштабируем фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Comforter Brush", cursive;
+  }
+ 
+  .text-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.6em; /* исходный размер текста */
+    line-height: 1.6;
+    color: #ff0000;
+  }
+ 
+  /* Адаптивность для мобильных устройств */
+  @media(max-width: 768px) {
+    body {
+      padding: 10px; /* чуть уменьшить отступ */
+    }
+    .text-container {
+      font-size: 1.2em;
+      padding: 15px;
+    }
+  }
+ 
+  @media(max-width: 480px) {
+    .text-container {
+      font-size: 1em;
+      padding: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+ 
+<div class="text-container" id="textContainer">
+  
+ <p>—Учитель, Кагешита снова описался!</p>
+ 
+<p>Громкий голос девочки охватил весь класс так, что все смогли услышать ее слова. Взгляды детских глаз сию же секунду направились на мой сжатый силуэт. Лужа под моим стулом говорила сама за себя.</p>
+ 
+<p>Класс наполнился гулким смехом, сопровождаемого шутками.</p>
+ 
+<p>—Катто нужно подгузники купить! Он без них не может жить!</p>
+ 
+<p>—Это он меня увидел и описался со страху!</p>
+ 
+<p>—Фууу! Почему он не сидит дома, если не может пойти в туалет?</p>
+ 
+<p>Мне было непонятно.</p>
+ 
+<p>«Это было что-то неправильное?» — думал я, когда учительница в очередной раз послала меня домой с причитанием о том, что с мамой необходимо завтра поговорить. Я не понимал суть сыр-бора. Мне не было стыдно за то, что происходило каждый раз. Но каждый раз когда это происходило, от обращенного внимания детей в свою сторону становилось не по себе. Их веселые усмешки не сочетались с постоянными толчками и ударами по голове. И даже так я не мог понять чего они добиваются.</p>
+ 
+<p>Мне же не больно.</p>
+ 
+<p>Хотелось узнать причину, но слышал лишь злые слова в свою сторону.</p>
+ 
+<p>Разорванный рюкзак, испачканная одежда, разбитый нос, порванные учебники - я не понимал зачем.</p>
+ 
+<p>Им было так весело.</p>
+<p>Я не чувствовал себя частью происходящего, пусть и находился в самом эпицентре.</p>
+ 
+<p>Потому что не мог понять причину радости.</p>
+ 
+<p>Я не мог даже предположить о том, что они могли испытывать и о чем думать в такие моменты. И уж тем более не знал, что должен испытывать я.</p>
+ 
+<p>Привычные страх, обида, злость - все было мне совершенно не близко, мною двигало лишь...</p>
+ 
+<p>Что мною двигало?</p>
+<p>Принимать это как рутину - единственное, что я мог на тот момент, параллельно размышляя: "А есть ли в этом хоть какой-нибудь смысл? Может ли кто-нибудь поделиться всемирной тайной, о которой мне забыли рассказать?"</p>
+ 
+<p>Но в конечном итоге стало понятно, что никакой тайны нет.</p>
+</div>
+ 
+<!-- Скример через 13 секунд -->
+<script>
+  setTimeout(() => {
+    // Создаем оверлей-скример
+    const screamDiv = document.createElement('div');
+    screamDiv.style.position = 'fixed';
+    screamDiv.style.top = '0';
+    screamDiv.style.left = '0';
+    screamDiv.style.width = '100%';
+    screamDiv.style.height = '100%';
+    screamDiv.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    screamDiv.style.display = 'flex';
+    screamDiv.style.justifyContent = 'center';
+    screamDiv.style.alignItems = 'center';
+    screamDiv.style.zIndex = '9999';
+    screamDiv.innerHTML = '<h1 style="color:red;font-size:3em;">Это просто весело :)</h1>';
+ 
+    document.body.appendChild(screamDiv);
+ 
+    // Убираем через 2 секунды
+    setTimeout(() => {
+      document.body.removeChild(screamDiv);
+    }, 2000);
+  }, 13000); // через 13 секунд
+</script>
+ 
+</body>
+</html>
